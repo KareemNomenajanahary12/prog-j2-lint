@@ -27,7 +27,7 @@ public class Wallet {
         return "Wallet closed";
     }
 
-    public String addVola(int amount) {
+    public String addMoney(int amount) {
         if (!this.opened) {
             return "Cannot add money: wallet is closed!";
         }
@@ -35,7 +35,7 @@ public class Wallet {
         return amount + " added";
     }
 
-    public int getVola() {
+    public int getMoney() {
         return this.amount;
     }
 
@@ -43,7 +43,7 @@ public class Wallet {
         return this.lost;
     }
 
-    public String checkVola() {
+    public String checkMoney() {
         return "Money in wallet: " + this.amount;
     }
 }
