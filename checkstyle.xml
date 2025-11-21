@@ -5,32 +5,22 @@
 
 <module name="Checker">
 
+
     <module name="LineLength">
         <property name="max" value="120"/>
-        <property name="message" value="La ligne est trop longue, maximum 120 caractères"/>
     </module>
 
     <module name="TreeWalker">
 
-        <module name="TypeName">
-            <property name="format" value="^[A-Z][a-zA-Z0-9]*$"/>
-            <property name="message" value="Le nom de la classe doit être en PascalCase et en anglais (ex: Wallet)"/>
-        </module>
 
-        <module name="MethodName">
-            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
-            <property name="message" value="Le nom de la méthode doit être en camelCase et en anglais (ex: addVola)"/>
-        </module>
+        <module name="TypeName"/>
 
-        <module name="LocalVariableName">
-            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
-            <property name="message" value="Le nom de la variable locale doit être en camelCase et en anglais (ex: amount)"/>
-        </module>
 
-        <module name="MemberName">
-            <property name="format" value="^[a-z][a-zA-Z0-9]*$"/>
-            <property name="message" value="Le nom de la variable membre doit être en camelCase et en anglais (ex: color)"/>
-        </module>
+        <module name="LocalVariableName"/>
+        <module name="MemberName"/>
 
+
+        <module name="MethodName"/>
     </module>
+
 </module>
